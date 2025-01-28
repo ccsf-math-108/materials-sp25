@@ -100,85 +100,85 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">Table()</code></td>
-                        <td>Create an empty table, usually to extend with data (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Create an empty table, usually to extend with data (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>None</td>
                         <td>An empty <strong>Table</strong></td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">Table().read_table(filename)</code></td>
-                        <td>Create a table from a data file (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Create a table from a data file (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td><strong>string</strong>: the name of the file</td>
                         <td><strong>Table</strong> with the contents of the data file</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.with_columns(name, values)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.with_columns(n1, v1, n2, v2,...)</code></td>
-                        <td>A table with an additional or replaced column or columns. <code class="language-plaintext highlighter-rouge">name</code> is a string for the name of a column, <code class="language-plaintext highlighter-rouge">values</code> is an array (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>A table with an additional or replaced column or columns. <code class="language-plaintext highlighter-rouge">name</code> is a string for the name of a column, <code class="language-plaintext highlighter-rouge">values</code> is an array (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>1. <strong>string</strong>: the name of the new column; <br> 2. <strong>array</strong>: the values in that column</td>
                         <td><strong>Table</strong>: a copy of the original Table with the new columns added</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.column(column_name_or_index)</code></td>
-                        <td>The values of a column (an array) (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>The values of a column (an array) (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td><strong>string</strong> or <strong>int</strong>: the column name or index</td>
                         <td><strong>array</strong>: the values in that column</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.num_rows</code></td>
-                        <td>Compute the number of rows in a table (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Compute the number of rows in a table (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>None</td>
                         <td><strong>int</strong>: the number of rows in the table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.num_columns</code></td>
-                        <td>Compute the number of columns in a table (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Compute the number of columns in a table (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>None</td>
                         <td><strong>int</strong>: the number of columns in the table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.labels</code></td>
-                        <td>Lists the column labels in a table (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Lists the column labels in a table (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>None</td>
                         <td><strong>array</strong>: the names of each column (as strings) in the table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.select(col1, col2, ...)</code></td>
-                        <td>Create a copy of a table with only some of the columns. Each column is the column name or index. (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Create a copy of a table with only some of the columns. Each column is the column name or index. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td><strong>string</strong> <em>or</em> <strong>int</strong>: column name(s) or index(es)</td>
                         <td><strong>Table</strong> with the selected columns</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.drop(col1, col2, ...)</code></td>
-                        <td>Create a copy of a table without some of the columns. Each column is the column name or index. (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Create a copy of a table without some of the columns. Each column is the column name or index. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td><strong>string</strong> <em>or</em> <strong>int</strong>: column name(s) or index(es)</td>
                         <td><strong>Table</strong> without the selected columns</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.relabeled(old_label, new_label)</code></td>
-                        <td>Creates a new table, changing the column name specified by the old label to the new label, and leaves the original table unchanged. (<a href="https://inferentialthinking.com/chapters/06/Tables.html">Ch 6</a>)</td>
+                        <td>Creates a new table, changing the column name specified by the old label to the new label, and leaves the original table unchanged. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/Tables.html">Ch 6</a>)</td>
                         <td>1. <strong>string</strong>: the old column name <br> 2. <strong>string</strong>: the new column name</td>
                         <td><strong>Table</strong>: a new Table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.show(n)</code></td>
-                        <td>Display <code class="language-plaintext highlighter-rouge">n</code> rows of a table. If no argument is specified, defaults to displaying the entire table. (<a href="https://inferentialthinking.com/chapters/06/1/Sorting_Rows.html">Ch 6.1</a>)</td>
+                        <td>Display <code class="language-plaintext highlighter-rouge">n</code> rows of a table. If no argument is specified, defaults to displaying the entire table. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/1/Sorting_Rows.html">Ch 6.1</a>)</td>
                         <td>(Optional) <strong>int</strong>: number of rows you want to display</td>
                         <td>None: displays a table with <code class="language-plaintext highlighter-rouge">n</code> rows</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.sort(column_name_or_index)</code></td>
-                        <td>Create a copy of a table sorted by the values in a column. Defaults to ascending order unless descending = True is included. (<a href="https://inferentialthinking.com/chapters/06/1/Sorting_Rows.html">Ch 6.1</a>)</td>
+                        <td>Create a copy of a table sorted by the values in a column. Defaults to ascending order unless descending = True is included. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/1/Sorting_Rows.html">Ch 6.1</a>)</td>
                         <td>1. <strong>string</strong> <em>or</em> <strong>int</strong>: column index or name <br> 2. (Optional) <code class="language-plaintext highlighter-rouge">descending=True</code></td>
                         <td><strong>Table</strong>: a copy of the original with the column sorted</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.where(column, predicate)</code></td>
-                        <td>Create a copy of a table with only the rows that match some <em>predicate</em>. See <code class="language-plaintext highlighter-rouge">Table.where</code> predicates below. (<a href="https://inferentialthinking.com/chapters/06/2/Selecting_Rows.html">Ch 6.2</a>)</td>
+                        <td>Create a copy of a table with only the rows that match some <em>predicate</em>. See <code class="language-plaintext highlighter-rouge">Table.where</code> predicates below. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/2/Selecting_Rows.html">Ch 6.2</a>)</td>
                         <td>1. <strong>string</strong> <em>or</em> <strong>int</strong>: column name or index <br> 2. <code class="language-plaintext highlighter-rouge">are.(...)</code> predicate</td>
                         <td><strong>Table</strong>: a copy of the original table with only the rows that match the predicate</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.take(row_indices)</code></td>
-                        <td>A table with only the rows at the given indices. <code class="language-plaintext highlighter-rouge">row_indices</code> is either an array of indices or an integer corresponding to one index. (<a href="https://inferentialthinking.com/chapters/06/2/Selecting_Rows.html">Ch 6.2</a>)</td>
+                        <td>A table with only the rows at the given indices. <code class="language-plaintext highlighter-rouge">row_indices</code> is either an array of indices or an integer corresponding to one index. (<a href="https://ccsf-math-108.github.io/textbook/chapters/06/2/Selecting_Rows.html">Ch 6.2</a>)</td>
                         <td><strong>array</strong> of ints: the indices of the rows to be included in the Table OR <strong>int</strong>: the index of the row to be included</td>
                         <td><strong>Table</strong>: a copy of the original table with only the rows at the given indices</td>
                     </tr>
@@ -250,7 +250,7 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.row(row_index)</code></td>
-                        <td>Accesses the row of a table by taking the index of the row as its argument. Note that rows are in general not arrays, as their elements can be of different types. However, you can use <code class="language-plaintext highlighter-rouge">.item</code> to access a particular element of a row using <code class="language-plaintext highlighter-rouge">row.item(label)</code>. (<a href="https://inferentialthinking.com/chapters/17/3/Rows_of_Tables.html">Ch 17.3</a>)</td>
+                        <td>Accesses the row of a table by taking the index of the row as its argument. Note that rows are in general not arrays, as their elements can be of different types. However, you can use <code class="language-plaintext highlighter-rouge">.item</code> to access a particular element of a row using <code class="language-plaintext highlighter-rouge">row.item(label)</code>. (<a href="https://ccsf-math-108.github.io/textbook/chapters/17/3/Rows_of_Tables.html">Ch 17.3</a>)</td>
                         <td><strong>int</strong>: row index</td>
                         <td><strong>Row object</strong> with the values of the row and labels of the corresponding columns</td>
                     </tr>
@@ -460,7 +460,7 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">sample_proportions(sample_size, model_proportions)</code></td>
-                        <td><code class="language-plaintext highlighter-rouge">sample_size</code> should be an integer, <code class="language-plaintext highlighter-rouge">model_proportions</code> an array of probabilities that sum up to 1. The function samples <code class="language-plaintext highlighter-rouge">sample_size</code> objects from the distribution specified by <code class="language-plaintext highlighter-rouge">model_proportions</code>. It returns an array with the same size as <code class="language-plaintext highlighter-rouge">model_proportions</code>. Each item in the array corresponds to the proportion of times it was sampled out of the <code class="language-plaintext highlighter-rouge">sample_size</code> times. (<a href="https://inferentialthinking.com/chapters/11/1/Assessing_a_Model.html">Ch 11.1</a>)</td>
+                        <td><code class="language-plaintext highlighter-rouge">sample_size</code> should be an integer, <code class="language-plaintext highlighter-rouge">model_proportions</code> an array of probabilities that sum up to 1. The function samples <code class="language-plaintext highlighter-rouge">sample_size</code> objects from the distribution specified by <code class="language-plaintext highlighter-rouge">model_proportions</code>. It returns an array with the same size as <code class="language-plaintext highlighter-rouge">model_proportions</code>. Each item in the array corresponds to the proportion of times it was sampled out of the <code class="language-plaintext highlighter-rouge">sample_size</code> times. (<a href="https://ccsf-math-108.github.io/textbook/chapters/11/1/Assessing_a_Model.html">Ch 11.1</a>)</td>
                         <td>1. <strong>int</strong>: sample size <br> 2. <strong>array</strong>: an array of proportions that should sum to 1</td>
                         <td><strong>array</strong>: each item corresponds to the proportion of times that corresponding item was sampled from <code class="language-plaintext highlighter-rouge">model_proportions</code> in <code class="language-plaintext highlighter-rouge">sample_size</code> draws, should sum to 1</td>
                     </tr>
