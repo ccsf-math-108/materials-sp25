@@ -364,9 +364,9 @@ table > tbody > tr:nth-child(odd) {
                         <td>Returns the i-th item in an array (remember Python indices start at 0!)</td>
                     </tr>
                     <tr>
-                        <td><code class="language-plaintext highlighter-rouge">np.random.choice(array, n)</code> <br> <code class="language-plaintext highlighter-rouge">np.random.choice(array)</code></td>
+                        <td><code class="language-plaintext highlighter-rouge">np.random.choice(array, n, replace)</code> <br> <code class="language-plaintext highlighter-rouge">np.random.choice(array)</code></td>
                         <td><a href="https://www.inferentialthinking.com/chapters/09/Randomness.html">9</a></td>
-                        <td>Picks one (by default) or some number (<code class="language-plaintext highlighter-rouge">n</code>) of items from <code class="language-plaintext highlighter-rouge">array</code> at random with replacement.</td>
+                        <td>Picks one (by default) or some number (<code class="language-plaintext highlighter-rouge">n</code>) of items from <code class="language-plaintext highlighter-rouge">array</code> at random with replacement (by default). For without replacement sampling, use <code class="language-plaintext highlighter-rouge">replace=False</code>.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.count_nonzero(array)</code></td>
