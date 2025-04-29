@@ -189,61 +189,61 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.scatter(x_column, y_column)</code></td>
-                        <td>Draws a scatter plot consisting of one point for each row of the table. Note that <code class="language-plaintext highlighter-rouge">x_column</code> and <code class="language-plaintext highlighter-rouge">y_column</code> must be strings specifying column names. Include optional argument <code class="language-plaintext highlighter-rouge">fit_line=True</code> if you want to draw a line of best fit for each set of points. (<a href="https://www.inferentialthinking.com/chapters/07/Visualization.html">Ch 7</a>)</td>
+                        <td>Draws a scatter plot consisting of one point for each row of the table. Note that <code class="language-plaintext highlighter-rouge">x_column</code> and <code class="language-plaintext highlighter-rouge">y_column</code> must be strings specifying column names. Include optional argument <code class="language-plaintext highlighter-rouge">fit_line=True</code> if you want to draw a line of best fit for each set of points. (<a href="https://ccsf-math-108.github.io/textbook/chapters/07/Visualization.html">Ch 7</a>)</td>
                         <td>1. <strong>string</strong>: name of the column on the x-axis <br> 2. <strong>string</strong>: name of the column on the y-axis <br> 3. (Optional) <code class="language-plaintext highlighter-rouge">fit_line=True</code></td>
                         <td>None: draws a scatter plot</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.plot(x_column, y_column)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.plot(x_column)</code></td>
-                        <td>Draw a line graph consisting of one point for each row of the table. If you only specify one column, it will plot the rest of the columns on the y-axis as different colored lines. (<a href="https://www.inferentialthinking.com/chapters/07/Visualization.html">Ch 7</a>)</td>
+                        <td>Draw a line graph consisting of one point for each row of the table. If you only specify one column, it will plot the rest of the columns on the y-axis as different colored lines. (<a href="https://ccsf-math-108.github.io/textbook/chapters/07/Visualization.html">Ch 7</a>)</td>
                         <td>1. <strong>string</strong>: name of the column on the x-axis <br> 2. <strong>string</strong>: name of the column on the y-axis</td>
                         <td>None: draws a line graph</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.barh(categories)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.barh(categories, values)</code></td>
-                        <td>Displays a bar chart with bars for each category in a column, with height proportional to the corresponding frequency. values argument unnecessary if table has only a column of categories and a column of values. (<a href="https://www.inferentialthinking.com/chapters/07/1/Visualizing_Categorical_Distributions.html">Ch 7.1</a>)</td>
+                        <td>Displays a bar chart with bars for each category in a column, with height proportional to the corresponding frequency. values argument unnecessary if table has only a column of categories and a column of values. (<a href="https://ccsf-math-108.github.io/textbook/chapters/07/1/Visualizing_Categorical_Distributions.html">Ch 7.1</a>)</td>
                         <td>1. <strong>string</strong>: name of the column with categories <br> 2. (Optional) <strong>string</strong>: the name of the column with values for corresponding categories</td>
                         <td>None: draws a bar chart</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.hist(column, unit, bins, group)</code></td>
-                        <td>Generates a histogram of the numerical values in a column. <code class="language-plaintext highlighter-rouge">unit</code> and <code class="language-plaintext highlighter-rouge">bins</code> are optional arguments, used to label the axes and group the values into intervals (bins), respectively. Bins have the form <code class="language-plaintext highlighter-rouge">[a, b)</code>, where <code class="language-plaintext highlighter-rouge">a</code> is included in the bin and <code class="language-plaintext highlighter-rouge">b</code> is not. (<a href="https://www.inferentialthinking.com/chapters/07/2/Visualizing_Numerical_Distributions.html">Ch 7.2</a>)</td>
+                        <td>Generates a histogram of the numerical values in a column. <code class="language-plaintext highlighter-rouge">unit</code> and <code class="language-plaintext highlighter-rouge">bins</code> are optional arguments, used to label the axes and group the values into intervals (bins), respectively. Bins have the form <code class="language-plaintext highlighter-rouge">[a, b)</code>, where <code class="language-plaintext highlighter-rouge">a</code> is included in the bin and <code class="language-plaintext highlighter-rouge">b</code> is not. (<a href="https://ccsf-math-108.github.io/textbook/chapters/07/2/Visualizing_Numerical_Distributions.html">Ch 7.2</a>)</td>
                         <td>1. <strong>string</strong>: name of the column with categories <br> 2. (Optional) <strong>string</strong>: units of x-axis <br> 3. (Optional) <strong>array</strong> of ints/floats denoting bin boundaries <br> 4. (Optional) <strong>string</strong>: name of categorical column to draw separate overlaid histograms for</td>
                         <td>None: draws a histogram</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.bin(column_name_or_index)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.bin(column_name_or_index, bins)</code></td>
-                        <td>Groups values into intervals, known as bins. Results in a two-column table that contains the number of rows in each bin. The first column lists the left endpoints of the bins, except in the last row. If the <code class="language-plaintext highlighter-rouge">bins</code> argument isn’t used, default is to produce 10 equally wide bins between the min and max values of the data. (<a href="https://www.inferentialthinking.com/chapters/07/2/Visualizing_Numerical_Distributions.html">Ch 7.2</a>)</td>
+                        <td>Groups values into intervals, known as bins. Results in a two-column table that contains the number of rows in each bin. The first column lists the left endpoints of the bins, except in the last row. If the <code class="language-plaintext highlighter-rouge">bins</code> argument isn’t used, default is to produce 10 equally wide bins between the min and max values of the data. (<a href="https://ccsf-math-108.github.io/textbook/chapters/07/2/Visualizing_Numerical_Distributions.html">Ch 7.2</a>)</td>
                         <td>1. <strong>string</strong> <em>or</em> <strong>int</strong>: column name(s) or index(es) <br> 2. (Optional) <strong>array</strong> of ints/floats denoting bin boundaries or an <strong>int</strong> of the number of bins you want</td>
                         <td><strong>Table</strong>: a new tables</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.apply(function)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.apply(function, col1, col2, ...)</code></td>
-                        <td>Returns an array of values resulting from applying a function to each item in a column. (<a href="https://www.inferentialthinking.com/chapters/08/1/Applying_a_Function_to_a_Column.html">Ch 8.1</a>)</td>
+                        <td>Returns an array of values resulting from applying a function to each item in a column. (<a href="https://ccsf-math-108.github.io/textbook/chapters/08/1/Applying_a_Function_to_a_Column.html">Ch 8.1</a>)</td>
                         <td>1. <strong>function</strong>: function to apply to column <br> 2. (Optional) <strong>string</strong>: name of the column to apply function to (if you have multiple columns, the respective column’s values will be passed as the corresponding argument to the function), and if there is no argument, your function will be applied to every row object in <code class="language-plaintext highlighter-rouge">tbl</code></td>
                         <td><strong>array</strong>: contains an element for each value in the original column after applying the function to it</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.group(column_or_columns, func)</code></td>
-                        <td>Group rows by unique values or combinations of values in a column(s). Multiple columns must be entered in array or list form. Other values aggregated by count (default) or optional argument <code class="language-plaintext highlighter-rouge">func</code>. (<a href="https://www.inferentialthinking.com/chapters/08/2/Classifying_by_One_Variable.html">Ch 8.2</a>)</td>
+                        <td>Group rows by unique values or combinations of values in a column(s). Multiple columns must be entered in array or list form. Other values aggregated by count (default) or optional argument <code class="language-plaintext highlighter-rouge">func</code>. (<a href="https://ccsf-math-108.github.io/textbook/chapters/08/2/Classifying_by_One_Variable.html">Ch 8.2</a>)</td>
                         <td>1. <strong>string</strong> or <strong>array of strings</strong>: column(s) on which to group <br> 2. (Optional) <strong>function</strong>: function to aggregate values in cells (defaults to count)</td>
                         <td><strong>Table</strong>: a new Table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.pivot(col1, col2, values, collect)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.pivot(col1, col2)</code></td>
-                        <td>A pivot table where each unique value in <code class="language-plaintext highlighter-rouge">col1</code> has its own column and each unique value in <code class="language-plaintext highlighter-rouge">col2</code> has its own row. Count or aggregate values from a third column, collect with some function. Default <code class="language-plaintext highlighter-rouge">values</code> and <code class="language-plaintext highlighter-rouge">collect</code> return counts in cells. (<a href="https://www.inferentialthinking.com/chapters/08/3/Classifying_by_More_than_One_Variable.html">Ch 8.3</a>)</td>
+                        <td>A pivot table where each unique value in <code class="language-plaintext highlighter-rouge">col1</code> has its own column and each unique value in <code class="language-plaintext highlighter-rouge">col2</code> has its own row. Count or aggregate values from a third column, collect with some function. Default <code class="language-plaintext highlighter-rouge">values</code> and <code class="language-plaintext highlighter-rouge">collect</code> return counts in cells. (<a href="https://ccsf-math-108.github.io/textbook/chapters/08/3/Classifying_by_More_than_One_Variable.html">Ch 8.3</a>)</td>
                         <td>1. <strong>string</strong>: name of column whose unique values will make up columns of pivot table <br> 2. <strong>string</strong>: name of column whose unique values will make up rows of pivot table <br> 3. (Optional) <strong>string</strong>: name of column that describes the values of cell <br> 4. (Optional) <strong>function</strong>: how the values are collected, e.g. <code class="language-plaintext highlighter-rouge">sum</code> or <code class="language-plaintext highlighter-rouge">np.mean</code></td>
                         <td><strong>Table</strong>: a new Table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tblA.join(colA, tblB, colB)</code> <br> <code class="language-plaintext highlighter-rouge">tblA.join(colA, tblB)</code></td>
-                        <td>Generate a table with the columns of tblA and tblB, containing rows for all values of a column that appear in both tables. Default <code class="language-plaintext highlighter-rouge">colB</code> is <code class="language-plaintext highlighter-rouge">colA</code>. <code class="language-plaintext highlighter-rouge">colA</code> and <code class="language-plaintext highlighter-rouge">colB</code> must be strings specifying column names. (<a href="https://www.inferentialthinking.com/chapters/08/4/Joining_Tables_by_Columns.html">Ch 8.4</a>)</td>
+                        <td>Generate a table with the columns of tblA and tblB, containing rows for all values of a column that appear in both tables. Default <code class="language-plaintext highlighter-rouge">colB</code> is <code class="language-plaintext highlighter-rouge">colA</code>. <code class="language-plaintext highlighter-rouge">colA</code> and <code class="language-plaintext highlighter-rouge">colB</code> must be strings specifying column names. (<a href="https://ccsf-math-108.github.io/textbook/chapters/08/4/Joining_Tables_by_Columns.html">Ch 8.4</a>)</td>
                         <td>1. <strong>string</strong>: name of a column in <code class="language-plaintext highlighter-rouge">tblA</code> with values to join on <br> 2. <strong>Table</strong>: other Table <br> 3. (Optional) <strong>string</strong>: if column names are different between Tables, the name of the shared column in <code class="language-plaintext highlighter-rouge">tblB</code></td>
                         <td><strong>Table</strong>: a new Table</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.sample(n)</code> <br> <code class="language-plaintext highlighter-rouge">tbl.sample(n, with_replacement)</code></td>
-                        <td>A new table where <code class="language-plaintext highlighter-rouge">n</code> rows are randomly sampled from the original table; by default, <code class="language-plaintext highlighter-rouge">n=tbl.num_rows</code>. Default is with replacement. For sampling without replacement, use argument <code class="language-plaintext highlighter-rouge">with_replacement=False</code>. For a non-uniform sample, provide a third argument <code class="language-plaintext highlighter-rouge">weights=distribution</code> where <code class="language-plaintext highlighter-rouge">distribution</code> is an array or list containing the probability of each row. (<a href="https://www.inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html">Ch 10</a>)</td>
+                        <td>A new table where <code class="language-plaintext highlighter-rouge">n</code> rows are randomly sampled from the original table; by default, <code class="language-plaintext highlighter-rouge">n=tbl.num_rows</code>. Default is with replacement. For sampling without replacement, use argument <code class="language-plaintext highlighter-rouge">with_replacement=False</code>. For a non-uniform sample, provide a third argument <code class="language-plaintext highlighter-rouge">weights=distribution</code> where <code class="language-plaintext highlighter-rouge">distribution</code> is an array or list containing the probability of each row. (<a href="https://ccsf-math-108.github.io/textbook/chapters/10/Sampling_and_Empirical_Distributions.html">Ch 10</a>)</td>
                         <td>1. <strong>int</strong>: sample size <br> 2. (Optional) <code class="language-plaintext highlighter-rouge">with_replacement=False</code></td>
                         <td><strong>Table</strong>: a new Table with <code class="language-plaintext highlighter-rouge">n</code> rows</td>
                     </tr>
@@ -259,6 +259,12 @@ table > tbody > tr:nth-child(odd) {
                         <td>None</td>
                         <td><strong>Rows object</strong> made up of all rows as individual row objects</td>
                     </tr>
+                    <tr>
+                    <td><code class="language-plaintext highlighter-rouge">tbl.split(k)</code></td>
+                    <td>Creates two tables, the first table contains the first k rows of a shuffled version of tbl, and the second contains the remaining rows of tbl.</td>
+                    <td><strong>int</strong>: number of rows randomly sampled into the first table</td>
+                    <td><strong>Two Tables</strong>: keys are unique column values, values are corresponding tables</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -282,7 +288,7 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">str.replace(old_string, new_string)</code></td>
-                        <td>Replaces each occurrence of <code class="language-plaintext highlighter-rouge">old_string</code> in <code class="language-plaintext highlighter-rouge">str</code> with the value of <code class="language-plaintext highlighter-rouge">new_string</code> (<a href="https://www.inferentialthinking.com/chapters/04/2/1/String_Methods.html">Ch 4.2.1</a>)</td>
+                        <td>Replaces each occurrence of <code class="language-plaintext highlighter-rouge">old_string</code> in <code class="language-plaintext highlighter-rouge">str</code> with the value of <code class="language-plaintext highlighter-rouge">new_string</code> (<a href="https://ccsf-math-108.github.io/textbook/chapters/04/2/1/String_Methods.html">Ch 4.2.1</a>)</td>
                     </tr>
                 </tbody>
             </table>
@@ -300,87 +306,87 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">max(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Returns the maximum value of an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">min(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Returns the minimum value of an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">sum(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Returns the sum of the values in an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">abs(num)</code>, <code class="language-plaintext highlighter-rouge">np.abs(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Takes the absolute value of a number or each number in an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">round(num)</code>, <code class="language-plaintext highlighter-rouge">np.round(array)</code> <br> <code class="language-plaintext highlighter-rouge">round(num, decimals)</code>, <code class="language-plaintext highlighter-rouge">np.round(array, decimals)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Rounds a number or an array of numbers to the nearest integer. If <code class="language-plaintext highlighter-rouge">decimals</code> (integer) is included, rounds to that many digits. If <code class="language-plaintext highlighter-rouge">decimals</code> is negative, remove that many digits of precision.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">len(array)</code>, <code class="language-plaintext highlighter-rouge">len(string)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/03/3/Calls.html">3.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/03/3/Calls.html">3.3</a></td>
                         <td>Returns the length (number of elements) of an array. If a string (<code class="language-plaintext highlighter-rouge">str</code>) is passed in instead, returns the number of characters in the string.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">make_array(val1, val2, ...)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/Sequences.html">5</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/Sequences.html">5</a></td>
                         <td>Makes a numpy array with the values passed in</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.average(array)</code> <br> <code class="language-plaintext highlighter-rouge">np.mean(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/1/Arrays.html">5.1</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/1/Arrays.html">5.1</a></td>
                         <td>Returns the mean value of an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.std(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/14/2/Variability.html#Standard-Deviation">14.2</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/14/2/Variability.html#Standard-Deviation">14.2</a></td>
                         <td>Returns the standard deviation of an array</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.diff(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/1/Arrays.html">5.1</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/1/Arrays.html">5.1</a></td>
                         <td>Returns a new array of size <code class="language-plaintext highlighter-rouge">len(arr)-1</code> with elements equal to the difference between adjacent elements; val_2 - val_1, val_3 - val_2, etc.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.sqrt(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/1/Arrays.html">5.1</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/1/Arrays.html">5.1</a></td>
                         <td>Returns an array with the square root of each element</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.arange(start, stop, step)</code> <br> <code class="language-plaintext highlighter-rouge">np.arange(start, stop)</code> <br> <code class="language-plaintext highlighter-rouge">np.arange(stop)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/2/Ranges.html">5.2</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/2/Ranges.html">5.2</a></td>
                         <td>An array of numbers starting with <code class="language-plaintext highlighter-rouge">start</code>, going up in increments of <code class="language-plaintext highlighter-rouge">step</code>, and going up to but excluding <code class="language-plaintext highlighter-rouge">stop</code>. When <code class="language-plaintext highlighter-rouge">start</code> and/or <code class="language-plaintext highlighter-rouge">step</code> are left out, default values are used in their place. Default <code class="language-plaintext highlighter-rouge">step</code> is 1; default <code class="language-plaintext highlighter-rouge">start</code> is 0.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">array.item(index)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/05/3/More_On_Arrays.html">5.3</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/05/3/More_On_Arrays.html">5.3</a></td>
                         <td>Returns the i-th item in an array (remember Python indices start at 0!)</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.random.choice(array, n, replace)</code> <br> <code class="language-plaintext highlighter-rouge">np.random.choice(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/09/Randomness.html">9</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/09/Randomness.html">9</a></td>
                         <td>Picks one (by default) or some number (<code class="language-plaintext highlighter-rouge">n</code>) of items from <code class="language-plaintext highlighter-rouge">array</code> at random with replacement (by default). For without replacement sampling, use <code class="language-plaintext highlighter-rouge">replace=False</code>.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.count_nonzero(array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/09/Randomness.html">9</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/09/Randomness.html">9</a></td>
                         <td>Returns the number of non-zero (or <code class="language-plaintext highlighter-rouge">True</code>) elements in an array.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">np.append(array, item)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/09/2/Iteration.html">9.2</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/09/2/Iteration.html">9.2</a></td>
                         <td>Returns a copy of the input array with <code class="language-plaintext highlighter-rouge">item</code> appended to the end.</td>
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">percentile(percentile, array)</code></td>
-                        <td><a href="https://www.inferentialthinking.com/chapters/13/1/Percentiles.html">13.1</a></td>
+                        <td><a href="https://ccsf-math-108.github.io/textbook/chapters/13/1/Percentiles.html">13.1</a></td>
                         <td>Returns the corresponding percentile of an array.</td>
                     </tr>
                 </tbody>
@@ -465,7 +471,7 @@ table > tbody > tr:nth-child(odd) {
                     </tr>
                     <tr>
                         <td><code class="language-plaintext highlighter-rouge">minimize(function)</code></td>
-                        <td>Returns an array of values such that if each value in the array was passed into <code class="language-plaintext highlighter-rouge">function</code> as arguments, it would minimize the output value of <code class="language-plaintext highlighter-rouge">function</code>. (<a href="https://www.inferentialthinking.com/chapters/15/4/Least_Squares_Regression">Ch 15.4</a>)</td>
+                        <td>Returns an array of values such that if each value in the array was passed into <code class="language-plaintext highlighter-rouge">function</code> as arguments, it would minimize the output value of <code class="language-plaintext highlighter-rouge">function</code>. (<a href="https://ccsf-math-108.github.io/textbook/chapters/15/4/Least_Squares_Regression">Ch 15.4</a>)</td>
                         <td><strong>function</strong>: name of a function that will be minimized</td>
                         <td><strong>array</strong>: An array in which each element corresponds to an argument that minimizes the output of the function. Values in the array are listed based on the order they are passed into the function; the first element in the array is also going to be the first value passed into the function.</td>
                     </tr>
